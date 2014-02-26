@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="js/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="js/bootstrap-responsive.min.css" media="screen" rel="stylesheet" type="text/css">
+        <script src="http://codeorigin.jquery.com/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../raymenu.css" />
+		<script src="../raymenu.min.js"></script>
+        <meta charset="UTF-8">
+        <style type="text/css">
+        	h1 {
+        		margin-top: 50px;
+        	}
+            .bs-docs-sidenav {
+                  width: 228px;
+                  margin: 50px 0 0;
+                  padding: 0;
+                  background-color: #fff;
+                  -webkit-border-radius: 6px;
+                     -moz-border-radius: 6px;
+                          border-radius: 6px;
+                  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+                     -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+                          box-shadow: 0 1px 4px rgba(0,0,0,.065);
+                }
+                .bs-docs-sidenav > li > a {
+                  display: block;
+                  width: 190px \9;
+                  margin: 0 0 -1px;
+                  padding: 8px 14px;
+                  border: 1px solid #e5e5e5;
+                }
+                .bs-docs-sidenav > li:first-child > a {
+                  -webkit-border-radius: 6px 6px 0 0;
+                     -moz-border-radius: 6px 6px 0 0;
+                          border-radius: 6px 6px 0 0;
+                }
+                .bs-docs-sidenav > li:last-child > a {
+                  -webkit-border-radius: 0 0 6px 6px;
+                     -moz-border-radius: 0 0 6px 6px;
+                          border-radius: 0 0 6px 6px;
+                }
+                .bs-docs-sidenav > .active > a {
+                  position: relative;
+                  z-index: 2;
+                  padding: 9px 15px;
+                  border: 0;
+                  text-shadow: 0 1px 0 rgba(0,0,0,.15);
+                  -webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+                     -moz-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+                          box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+                }
+
+                .rayMenu.bs {
+				     background: white;
+				    -webkit-box-shadow: none;
+				    -moz-box-shadow: none;
+				    box-shadow: 0px 0px 4px 4px #ccc;
+				}
+
+				.rayMenu.bs li a,
+				.rayMenu.bs li:hover ul li a {
+				    color: #08c;
+				}
+
+				.rayMenu.bs li:hover a {
+					color: white;
+				}
+
+				.rayMenu.bs li:hover,
+				.rayMenu.bs li:hover ul,
+				.rayMenu.bs li:hover ul li a {
+				    background: #08c;
+				    color: white;
+				}
+				.rayMenu.bs li:hover ul li a:hover { 
+				    color: black; 
+				}
+        </style>
+    </head>
+    <body data-spy="scroll" data-target="#navbar">
+        <header>
+        	<ul class="rayMenu bs" data-role='rayMenu'>
+			    <li>
+			    	<a href="../index.html">
+			    		<img src='../samples/home.png'/>
+						<span class="open">Demo</span>
+			    	</a>
+		    	</li>
+			    <li>
+			    	<a href="http://codecanyon.net/user/liriboy" target="_blank">
+			    		<img src='../samples/user.png'/>
+						<span class="open">Portfolio</span>
+			    	</a>
+		    	</li>
+			    <li>
+		    		<a href="#">
+		    			<img src='../samples/charts.png'/>
+						<span class="open">Themes</span>
+					</a>
+					<ul>
+			            <li><a href="../samples/blue.html">Blue</a></li>
+			            <li><a href="../samples/orange.html">Orange</a></li>
+			            <li><a href="../samples/pastel.html">Pastel</a></li>
+			        </ul>
+			    </li>
+			    <li>
+			    	<a href="index.html">
+			    		<img src='../samples/envelope.png'/>
+						<span class="open">Documentation</span>
+			    	</a>
+		    	</li>
+			</ul>
+        </header>
+        <section class="container">
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div id="navbar" class="span3">
+                        <ul class="nav nav-list bs-docs-sidenav affix-top" data-spy="affix" data-offset-top="0">
+                        	<li>
+                                <a href="#started">Getting Started</a>
+                            </li>
+                            <li>
+                                <a href="#basic">Basic example</a>
+                            </li>
+                            <li>
+                                <a href="#options">Helpful options</a>
+                            </li>
+                            <li>
+                                <a href="#themes">Themes</a>
+                            </li>
+                            <li>
+                                <a href="#css">CSS customization</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="span8">
+                    	<section id="started"> 
+                            <div class="page-header">
+                                <h1>Getting Started</h1>
+                            </div>
+                            <p>
+                            RayMenu is a jQuery plugin, therefore you need to include <a href="http://jquery.com/" target="_blank">jQuery</a> library in your web page:
+                            </p>
+<pre class="prettyprint linenums">
+  <span style="color:#687687">&lt;</span>script src<span style="color:#687687">=</span><span style="color:#036a07">"js/jquery.min.js"</span><span style="color:#687687">></span><span style="color:#687687">&lt;</span>/script<span style="color:#687687">></span>
+</pre>
+                            <p>
+                            Include RayMenu library:
+                            </p>
+<pre class="prettyprint linenums">
+  <span style="color:#687687">&lt;</span>script src<span style="color:#687687">=</span><span style="color:#036a07">"js/raymenu.min.js"</span><span style="color:#687687">></span><span style="color:#687687">&lt;</span>/script<span style="color:#687687">></span>
+</pre>
+							<p>
+                            Include RayMenu styling (CSS):
+                            </p>
+<pre class="prettyprint linenums">
+  <span style="color:#687687">&lt;</span>link rel<span style="color:#687687">=</span><span style="color:#036a07">"stylesheet"</span> type<span style="color:#687687">=</span><span style="color:#036a07">"text/css"</span> href<span style="color:#687687">=</span><span style="color:#036a07">"css/raymenu.css"</span> /<span style="color:#687687">></span>
+</pre>
+							<h4>You're good to go!</h4>
+						</section>
+                        <section id="basic"> 
+                            <div class="page-header">
+                                <h1>Basic example</h1>
+                            </div>
+                                           
+                            <h2>Zero lines of code!</h2>
+                            <p>
+                            RayMenu automatically detect your DOM element. Just place "data-role='rayMenu'" on your list element (ul):
+                            </p>
+<pre class="prettyprint linenums">
+  <span style="color:#687687">&lt;</span>ul <span style="color:#00f;font-weight:700">class</span><span style="color:#687687">=</span><span style="color:#036a07">"rayMenu"</span> <span style="color:#00f;font-weight:700">data-role</span><span style="color:#687687">=</span><span style="color:#036a07">"rayMenu"</span><span style="color:#687687">></span>
+        <span style="color:#687687">&lt;</span>li<span style="color:#687687">></span>
+            <span style="color:#687687">&lt;</span>a href<span style="color:#687687">=</span><span style="color:#036a07">"#"</span><span style="color:#687687">></span>
+                <span style="color:#687687">&lt;</span>span <span style="color:#00f;font-weight:700">class</span><span style="color:#687687">=</span><span style="color:#036a07">"open"</span><span style="color:#687687">></span>Home<span style="color:#687687">&lt;</span>/span<span style="color:#687687">></span>
+            <span style="color:#687687">&lt;</span>/a<span style="color:#687687">></span>
+        <span style="color:#687687">&lt;</span>/li<span style="color:#687687">></span>
+        <span style="color:#687687">&lt;</span>li<span style="color:#687687">></span>
+            <span style="color:#687687">&lt;</span>a href<span style="color:#687687">=</span><span style="color:#036a07">"#"</span><span style="color:#687687">></span>
+                <span style="color:#687687">&lt;</span>span <span style="color:#00f;font-weight:700">class</span><span style="color:#687687">=</span><span style="color:#036a07">"open"</span><span style="color:#687687">></span>About Us<span style="color:#687687">&lt;</span>/span<span style="color:#687687">></span>
+            <span style="color:#687687">&lt;</span>/a<span style="color:#687687">></span>
+        <span style="color:#687687">&lt;</span>/li<span style="color:#687687">></span>
+        <span style="color:#687687">&lt;</span>li<span style="color:#687687">></span>
+            <span style="color:#687687">&lt;</span>a href<span style="color:#687687">=</span><span style="color:#036a07">"#"</span><span style="color:#687687">></span>
+                <span style="color:#687687">&lt;</span>span <span style="color:#00f;font-weight:700">class</span><span style="color:#687687">=</span><span style="color:#036a07">"open"</span><span style="color:#687687">></span>Analytics<span style="color:#687687">&lt;</span>/span<span style="color:#687687">></span>
+            <span style="color:#687687">&lt;</span>/a<span style="color:#687687">></span>
+            <span style="color:#687687">&lt;</span>ul<span style="color:#687687">></span>
+                <span style="color:#687687">&lt;</span>li<span style="color:#687687">></span><span style="color:#687687">&lt;</span>a href<span style="color:#687687">=</span><span style="color:#036a07">"#"</span><span style="color:#687687">></span>Dashboard<span style="color:#687687">&lt;</span>/a<span style="color:#687687">></span><span style="color:#687687">&lt;</span>/li<span style="color:#687687">></span>
+                <span style="color:#687687">&lt;</span>li<span style="color:#687687">></span><span style="color:#687687">&lt;</span>a href<span style="color:#687687">=</span><span style="color:#036a07">"#"</span><span style="color:#687687">></span>Insight<span style="color:#687687">&lt;</span>/a<span style="color:#687687">></span><span style="color:#687687">&lt;</span>/li<span style="color:#687687">></span>
+                <span style="color:#687687">&lt;</span>li<span style="color:#687687">></span><span style="color:#687687">&lt;</span>a href<span style="color:#687687">=</span><span style="color:#036a07">"#"</span><span style="color:#687687">></span>Reports<span style="color:#687687">&lt;</span>/a<span style="color:#687687">></span><span style="color:#687687">&lt;</span>/li<span style="color:#687687">></span>
+            <span style="color:#687687">&lt;</span>/ul<span style="color:#687687">></span>
+        <span style="color:#687687">&lt;</span>/li<span style="color:#687687">></span>
+        <span style="color:#687687">&lt;</span>li<span style="color:#687687">></span>
+            <span style="color:#687687">&lt;</span>a href<span style="color:#687687">=</span><span style="color:#036a07">"#"</span><span style="color:#687687">></span>
+                <span style="color:#687687">&lt;</span>span <span style="color:#00f;font-weight:700">class</span><span style="color:#687687">=</span><span style="color:#036a07">"open"</span><span style="color:#687687">></span>Contact<span style="color:#687687">&lt;</span>/span<span style="color:#687687">></span>
+            <span style="color:#687687">&lt;</span>/a<span style="color:#687687">></span>
+        <span style="color:#687687">&lt;</span>/li<span style="color:#687687">></span>
+    <span style="color:#687687">&lt;</span>/ul<span style="color:#687687">></span>
+</pre>
+
+                            <h2>Controling expand/collapse states</h2>
+                            <p>You can determine the menu height when expanded or collapsed. This is useful if you want to change the default values in case of using larger icons for your menu items.</p>
+                            <pre class="prettyprint linenums">
+<span style="color:#687687">&lt;</span>ul <span style="color:#00f;font-weight:700">class</span><span style="color:#687687">=</span><span style="color:#036a07">"rayMenu"</span> <span style="color:#00f;font-weight:700">data-role</span><span style="color:#687687">=</span><span style="color:#036a07">"rayMenu"</span> data<span style="color:#687687">-</span>close<span style="color:#687687">-</span>height<span style="color:#687687">=</span><span style="color:#036a07">"24"</span> data<span style="color:#687687">-</span>open<span style="color:#687687">-</span>height<span style="color:#687687">=</span><span style="color:#036a07">"35"</span><span style="color:#687687">></span></pre>
+
+
+                        </section>
+                        <section id="options">
+                            <div class="page-header">
+                                <h1>Helpful options</h1>
+                            </div>
+
+                         	<h2>Open & Close states</h2>
+                            <p>
+                            Control which elements are visible for an expanded menu and which are visible for collapsed menu.
+                            <br/>
+                            Elements with "open" class will be visible only for expanded menu:
+                            </p>
+                            <pre class="prettyprint linenums">
+<span style="color:#687687">&lt;</span>span <span style="color:#00f;font-weight:700">class</span><span style="color:#687687">=</span><span style="color:#036a07">"open"</span><span style="color:#687687">></span>Home<span style="color:#687687">&lt;</span>/span<span style="color:#687687">></span>                            </pre>
+	
+							<p>
+                            Elements with "close" class will be visible only for collapsed menu:
+                            </p>
+                            <pre class="prettyprint linenums">
+<span style="color:#687687">&lt;</span>span <span style="color:#00f;font-weight:700">class</span><span style="color:#687687">=</span><span style="color:#036a07">"close"</span><span style="color:#687687">></span>Home<span style="color:#687687">&lt;</span>/span<span style="color:#687687">></span>                            </pre>
+
+							<p>
+                            This is very useful for controlling which elements will be visible all the time or just for specific state. 
+                            </p>
+                            <p class="alert alert-info">
+                            	Omitting "open/close" class from an element will leave the element visible for both states.
+                            </p>
+
+                            <h2>Disable mouse hover style</h2>
+                            <p>
+                            In some cases you will want to avoid highlighing an item in your list, to achieve that use the "nohover" class:
+                            </p>
+                            <pre class="prettyprint linenums">
+<span style="color:#687687">&lt;</span>li <span style="color:#00f;font-weight:700">class</span><span style="color:#687687">=</span><span style="color:#036a07">"right nohover"</span><span style="color:#687687">></span></pre>
+							<p class="alert alert-info">
+                            	"right" class will float your li element to the right side of the menu.
+                            </p>
+                        </section>
+
+                       <section id="themes">
+                            <div class="page-header">
+                                <h1>Themes</h1>
+                            </div>
+                            
+                            <p>There are several out-of-the-box themes you can use on your website. Navigate to each theme from the above menu.
+                            <br/>
+                            To create you own theme, please refer to the <a href="#css">"CSS customization"</a> section.
+                            <br/>
+                            To use each theme, add the relevant class to your menu element: "blue", "orange", "pastel" etc.
+                            </p>
+                            <pre class="prettyprint linenums">
+<span style="color:#687687">&lt;</span>ul <span style="color:#00f;font-weight:700">class</span><span style="color:#687687">=</span><span style="color:#036a07">"rayMenu blue"</span> data<span style="color:#687687">-</span>role<span style="color:#687687">=</span><span style="color:#036a07">'rayMenu'</span><span style="color:#687687">></span></pre>
+                       </section>
+
+                      <section id="css">
+                            <div class="page-header">
+                                <h1>CSS Customization</h1>
+                            </div>                           
+                            <h2>Create custom theme</h2>
+                            <p>RayMenu main class is "rayMenu".
+                            <br />You can modify anything you need using this class, for example: changing menu background:</p>
+                            <pre class="prettyprint linenums">
+<span style="font-style:italic">.rayMenu</span><span style="font-style:italic">.mytheme</span>{
+    <span style="color:#6d79de;font-weight:700">background</span>: <span style="color:#c5060b;font-weight:700">#51C5D4</span>;
+    -webkit-<span style="color:#6d79de;font-weight:700">box-shadow</span>: <span style="color:#0000cd">0</span> <span style="color:#0000cd">3<span style="color:#00f;font-weight:700">px</span></span> <span style="color:#0000cd">3<span style="color:#00f;font-weight:700">px</span></span> <span style="color:#c5060b;font-weight:700">#3c3c40</span>;
+    -moz-<span style="color:#6d79de;font-weight:700">box-shadow</span>: <span style="color:#0000cd">0</span> <span style="color:#0000cd">3<span style="color:#00f;font-weight:700">px</span></span> <span style="color:#0000cd">3<span style="color:#00f;font-weight:700">px</span></span> <span style="color:#c5060b;font-weight:700">#3c3c40</span>;
+    <span style="color:#6d79de;font-weight:700">box-shadow</span>: <span style="color:#0000cd">0</span> <span style="color:#0000cd">3<span style="color:#00f;font-weight:700">px</span></span> <span style="color:#0000cd">3<span style="color:#00f;font-weight:700">px</span></span> <span style="color:#c5060b;font-weight:700">#3c3c40</span>;
+}                            </pre>
+
+							<h2>Collapsed state styling</h2>
+							<p>When RayMenu is collapsed a "collapsed" class is automatically added to your list element.
+							<br/>
+							You can refer to that class in order to change the collapsed state styling:</p>
+							<pre class="prettyprint linenums">
+<span style="font-style:italic">.rayMenu</span><span style="font-style:italic">.collapsed</span> <span style="font-weight:700">li</span> <span style="font-weight:700">a</span> {
+    <span style="color:#6d79de;font-weight:700">padding</span>: <span style="color:#0000cd">3<span style="color:#00f;font-weight:700">px</span></span> <span style="color:#0000cd">5<span style="color:#00f;font-weight:700">px</span></span> <span style="color:#0000cd">0</span> <span style="color:#0000cd">5<span style="color:#00f;font-weight:700">px</span></span>;
+}							</pre>
+
+							<h2>Submenu styling</h2>
+							<pre>
+<span style="font-style:italic">.rayMenu</span> <span style="font-weight:700">li</span><span style="font-style:italic">:hover</span> <span style="font-weight:700">ul</span> {
+    <span style="color:#6d79de;font-weight:700">top</span>:<span style="color:#0000cd">35<span style="color:#00f;font-weight:700">px</span></span>;
+    <span style="color:#6d79de;font-weight:700">background</span>: <span style="color:#c5060b;font-weight:700">#383838</span>;
+}							</pre>
+
+                            <h2>Complete custom theme example:</h2>
+                            <pre class="prettyprint linenums">
+<span style="font-style:italic">.rayMenu</span><span style="font-style:italic">.blue</span> {
+     <span style="color:#6d79de;font-weight:700">background</span>: <span style="color:#c5060b;font-weight:700">#51C5D4</span>;
+    -webkit-<span style="color:#6d79de;font-weight:700">box-shadow</span>: <span style="color:#06960e;font-weight:700">none</span>;
+    -moz-<span style="color:#6d79de;font-weight:700">box-shadow</span>: <span style="color:#06960e;font-weight:700">none</span>;
+    <span style="color:#6d79de;font-weight:700">box-shadow</span>: <span style="color:#06960e;font-weight:700">none</span>;
+}
+
+<span style="font-style:italic">.rayMenu</span><span style="font-style:italic">.blue</span> <span style="font-weight:700">li</span> <span style="font-weight:700">a</span>,
+<span style="font-style:italic">.rayMenu</span><span style="font-style:italic">.blue</span> <span style="font-weight:700">li</span><span style="font-style:italic">:hover</span> <span style="font-weight:700">ul</span> <span style="font-weight:700">li</span> <span style="font-weight:700">a</span> {
+    <span style="color:#6d79de;font-weight:700">color</span>: <span style="color:#06960e;font-weight:700">black</span>;
+}
+
+<span style="font-style:italic">.rayMenu</span><span style="font-style:italic">.blue</span> <span style="font-weight:700">li</span><span style="font-style:italic">:hover</span>,
+<span style="font-style:italic">.rayMenu</span><span style="font-style:italic">.blue</span> <span style="font-weight:700">li</span><span style="font-style:italic">:hover</span> <span style="font-weight:700">ul</span>,
+<span style="font-style:italic">.rayMenu</span><span style="font-style:italic">.blue</span> <span style="font-weight:700">li</span><span style="font-style:italic">:hover</span> <span style="font-weight:700">ul</span> <span style="font-weight:700">li</span> <span style="font-weight:700">a</span> {
+    <span style="color:#6d79de;font-weight:700">background</span>: <span style="color:#c5060b;font-weight:700">#80D4DF</span>;
+}
+<span style="font-style:italic">.rayMenu</span><span style="font-style:italic">.blue</span> <span style="font-weight:700">li</span><span style="font-style:italic">:hover</span> <span style="font-weight:700">ul</span> <span style="font-weight:700">li</span> <span style="font-weight:700">a</span><span style="font-style:italic">:hover</span> { 
+    <span style="color:#6d79de;font-weight:700">background</span>: <span style="color:#c5060b;font-weight:700">#E8EDE0</span>; 
+}
+                            </pre>
+                        </section>         
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer><span>Copyright © 2014 All Rights Reserved - <a href='https://github.com/liri' target="_blank">Liron Aichel</a></span></footer>
+    </body>
+</html>

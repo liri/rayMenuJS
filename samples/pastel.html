@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<script src="http://codeorigin.jquery.com/jquery-2.0.3.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../raymenu.css" />
+		<script src="../raymenu.min.js"></script>
+		<style>
+			body {
+				margin: 0;
+				font:12px arial, verdana, sans-serif;
+				height: 1000px;
+				min-width: 700px;
+			}
+
+			/* search box style */
+			.search {
+			    display: block;
+			    -webkit-appearance: none;
+			    -moz-appearance: none;
+			    padding: 5px 48px 5px 12px;
+				
+			    -webkit-border-radius: 200px;
+			    -moz-border-radius: 200px;
+			    border-radius: 200px;
+				
+				width: 150px;
+			    height: 16px;
+			    color: #3a4449;
+			    border: none;
+			    outline: none;
+				
+			    -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,.3), 0 2px 0 rgba(255,255,255,.3), inset 0 1px 2px rgba(0,0,0,.2);
+			    -moz-box-shadow: 0 0 0 1px rgba(0,0,0,.3), 0 2px 0 rgba(255,255,255,.3), inset 0 1px 2px rgba(0,0,0,.2);
+			    box-shadow: 0 0 0 1px rgba(0,0,0,.3), 0 2px 0 rgba(255,255,255,.3), inset 0 1px 2px rgba(0,0,0,.2);
+				
+				position: relative;
+			    z-index: 2;
+			    background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAcCAIAAACGS4oPAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAbtJREFUeNrsVd9LwlAU3ubYdudvsymUQULam2GpoWFFYFD900rh1EytB3/1lAbW1oOJgWK7HbPCh9hUbEX1cR/O/Th33+693z2HvL5tCQ4bRZLEF8PIMvQowoQeoPWTIgiK0BG/V4zW8cpGBtFLblI33jQaudx5q3UHsdvtCoW2VjyeacVIeNSLNiup+qjFbDZ1egYPf5SGMVYwju/EtsPhyZXMiNW+s0azmU6LRoQikfC63w9MpVrNZLJALi8NMU83imKGZdlYNLoZDBpfAQFMgUyLmTlb/7HTge/6/b5xEqZAttvtGQyidpAswyiKMswZT8OYpmmDwaC+9pOdYdXhdDopiqrUauNkrV4HUhAErLX8Y7yLqWIjEIAdFIul0uVVt/sEA4KLQhHEfL41PDHerO+wmNWtX65U8vlCv99XlOfhD1IGhmE4jkU8f7C/x3HcJGdoM6KhmF1LDCBJUrlclaT7wWAgCC6vd7Ver8nyA4e4w0QCIaQpZh+J2cwmcvpO3ev1ksmULMsWq/Xk+Egz32HiZ6/6YP3deBxKl4nnpyhXVtMsO5sWC2b+G/rZD2sx/536jx7jiwADANtP/9R/HghOAAAAAElFTkSuQmCC) center right no-repeat;
+
+			}
+
+			.search.small {
+				font-size: 12px;
+				padding: 0px 48px 0px 12px;
+				width: 150px;
+			}
+
+			.search::-webkit-input-placeholder, 
+			.search:-moz-placeholder {
+			    color: #607078;
+			}
+			input.search {
+				margin-top: 10px;
+				margin-right: 5px;
+			}
+			input.search.small {
+				margin-top: 4px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<ul class="rayMenu pastel" data-role='rayMenu'>
+			    <li>
+			    	<a href="../index.html">
+			    		<img src='home.png'/>
+						<span class="open">Demo</span>
+			    	</a>
+		    	</li>
+			    <li>
+			    	<a href="http://codecanyon.net/user/liriboy" target="_blank">
+			    		<img src='user.png'/>
+						<span class="open">Portfolio</span>
+			    	</a>
+		    	</li>
+			    <li>
+		    		<a href="#">
+		    			<img src='charts.png'/>
+						<span class="open">Themes</span>
+					</a>
+					<ul>
+			            <li><a href="blue.html">Blue</a></li>
+			            <li><a href="orange.html">Orange</a></li>
+			            <li><a href="pastel.html">Pastel</a></li>
+			        </ul>
+			    </li>
+			    <li>
+			    	<a href="../docs/index.html">
+			    		<img src='envelope.png'/>
+						<span class="open">Documentation</span>
+			    	</a>
+		    	</li>
+		    	<li class="right nohover">
+			    	<input class="search open" type="search" placeholder="Search...">
+			    	<input class="search small close" type="search" placeholder="Search...">
+		    	</li>
+			</ul>
+		</header>
+		<div style="position: absolute; bottom: 10px;">Icons are CC by <a href="http://glyphicons.com" target="_blank">glyphicons.com</a></div>
+	</body>
+</html>
