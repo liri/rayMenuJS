@@ -21,10 +21,10 @@ Supported for all major browsers:
 
 Copyright (c) 2013 - 2014 Liron Aichel <br/>
 
-Project homepage: http://lironaichel.com/lironaichel/jsworks/raymenu <br/>
+Project homepage: http://lironaichel.com/jsworks/raymenu <br/>
 Github homepage: http://liri.github.io/rayMenuJS <br/>
 
-Documentation: http://lironaichel.com/lironaichel/jsworks/raymenu/docs/index.html <br/>
+Documentation: http://lironaichel.com/jsworks/raymenu/docs/index.html <br/>
 
 Licensed under MIT-style license:
  Permission is hereby granted, free of charge, to any person obtaining a copy
